@@ -10,4 +10,4 @@ Gems used in this app:
 * ...
 
 
-[View in demo](www.google.com)
+[View in demo](https://www.google.com)

@@ -1,0 +1,5 @@
+= content_tag_for(:li, @pins, class: "") do |pin|
+  %h2= link_to pin.title, pin
+
+= link_to "new pin", new_pin_path
+ 
