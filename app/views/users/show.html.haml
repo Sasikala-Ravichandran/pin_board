@@ -1,0 +1,7 @@
+- if user_signed_in?
+  = current_user.email
+  = current_user.id
+  - @user.pins.each do |pin|
+    %p= link_to pin.title, pin
+- else
+  %p Nobody

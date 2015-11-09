@@ -1,16 +1,18 @@
 class PinsController < ApplicationController
 
 	before_action :find_pin, only: [:show, :edit, :update, :destroy]
+	before_action :store_return_to, only: [:new]
+	before_action :authenticate_user!, only: [:new]
 	def index
 		@pins = Pin.order("created_at DESC")
 	end
 
 	def new
-		@pin = Pin.new
+		@pin = current_user.pins.build
 	end 
 
 	def create
-		@pin = Pin.new(pin_params)
+		@pin = current_user.pins.build(pin_params)
 		if @pin.save
 			flash[:notice] = "Successfully created a Pin"
 			redirect_to @pin
