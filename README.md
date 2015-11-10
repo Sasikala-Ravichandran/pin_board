@@ -9,13 +9,15 @@ Gems used in this app:
 
 * bootstrap as front-end framework
 
-* simple_form 
+* simple_form for forms
 
 * devise for user authentication
 
 * paperclip for image uploading
 
-* masonry-rails 
+* masonry-rails for jquery masonry
+
+* acts_as_votable to allow records to be votable
 
 * ...
 
