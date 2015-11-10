@@ -1,7 +1,6 @@
 == README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+An app allows signed in user to create a pin and share their pins to other users. Also users can vote for their liked pins 
 
 Gems used in this app:
 
@@ -21,5 +20,4 @@ Gems used in this app:
 
 * ...
 
-
-[View in demo](https://www.google.com)
+ 
