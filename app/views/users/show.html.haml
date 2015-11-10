@@ -1,7 +1,9 @@
 - if user_signed_in?
-  = current_user.email
-  = current_user.id
-  - @user.pins.each do |pin|
-    %p= link_to pin.title, pin
-- else
-  %p Nobody
+  #pins.transitions-enabled
+    - @user.pins.each do |pin|
+      .box.panel.panel-default
+        = link_to (image_tag(pin.image.url)), pin
+        .panel-body
+          %h2= link_to pin.title, pin
+
+ 

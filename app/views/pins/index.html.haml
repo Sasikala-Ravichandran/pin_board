@@ -1,9 +1,9 @@
-- if user_signed_in?
-  = current_user.email
-  = current_user.id
-= content_tag_for(:li, @pins, class: "") do |pin|
-  = link_to(image_tag pin.image.url(:medium))
-  %h2= link_to pin.title, pin
-
-= link_to "new pin", new_pin_path, class: "btn btn-warning"
- 
+#pins.transitions-enabled
+  - @pins.each do |pin|
+    .box.panel.panel-default
+      = link_to (image_tag pin.image.url), pin
+      .panel-body
+        %h2= link_to pin.title, pin
+        %p.user
+        Submitted by
+        = pin.user.email

@@ -15,6 +15,8 @@ Gems used in this app:
 
 * paperclip for image uploading
 
+* masonry-rails 
+
 * ...
 
 
