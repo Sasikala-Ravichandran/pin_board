@@ -7,6 +7,14 @@ Gems used in this app:
 
 * HAML for view template
 
+* bootstrap as front-end framework
+
+* simple_form 
+
+* devise for user authentication
+
+* paperclip for image uploading
+
 * ...
 
 
