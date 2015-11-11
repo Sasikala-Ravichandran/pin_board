@@ -17,7 +17,6 @@ Gems used in this app:
 * masonry-rails for jquery masonry
 
 * acts_as_votable to allow records to be votable
-
-* ...
+ 
 
  
