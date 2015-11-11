@@ -1,4 +1,4 @@
-== README
+##PINBOARD
 
 An app allows signed in user to create a pin and share their pins to other users. Also users can vote for their liked pins 
 
