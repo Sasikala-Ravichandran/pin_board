@@ -7,4 +7,8 @@ $ ->
     $('#pins').masonry 
       itemSelector: '.box',
       isFitWidth: true
+
+  $('#link').on "ajax:success", (e, data, status,xhr) ->
+    alert("Working")
+
  

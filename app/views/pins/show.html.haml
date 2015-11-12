@@ -14,8 +14,8 @@
               = @pin.user.email
           .col-md-6
             .btn-group.pull-right
-              = link_to like_pin_path(@pin), method: :put, class: "btn btn-default" do
-                %span.glyphicon.glyphicon-heart
+              = link_to like_pin_path(@pin), method: :put, id:"like", class: "btn btn-default", remote: true do
+                %span#upvot.glyphicon.glyphicon-chevron-up
                   =@pin.get_upvotes.size
               - if user_signed_in?
                 - if current_user == @pin.user
