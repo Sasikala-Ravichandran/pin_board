@@ -1,12 +1,12 @@
 Rails.application.routes.draw do
-  get 'users/show'
 
   devise_for :users
-   resources :pins do
-   	 member do 
-   	 	put 'like', to: "pins#upvote"
-   	 end
-   end
-   resources :users, only: [:show]
-   root "pins#index"
+  resources :pins do
+    member do
+      put 'like', to: "pins#upvote"
+    end
+  end
+  resources :users, only: [:show]
+  root "pins#index"
+
 end

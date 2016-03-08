@@ -1,4 +1,4 @@
-!!!5
+!!!
 %html
   %head
     %title Pin Board
@@ -6,14 +6,8 @@
     = javascript_include_tag 'application', 'data-turbolinks-track' => true
     = csrf_meta_tags
   %body
-
     = render 'layouts/header'
-
     .container
       - flash.each do |name, msg|
         =content_tag(:div, msg, class: "alert alert-info")
-
-      = yield
-
-
- 
+      = yield 
